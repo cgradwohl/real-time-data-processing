@@ -23,17 +23,6 @@ const serverlessConfiguration: AWS = {
     },
   },
   functions: {
-    hello: {
-      handler: 'handler.hello',
-      events: [
-        {
-          http: {
-            method: 'get',
-            path: 'hello',
-          }
-        }
-      ]
-    },
     ingestion: {
       handler: 'handler.ingestStream',
       events: [
